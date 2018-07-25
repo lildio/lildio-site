@@ -25,7 +25,7 @@ SECRET_KEY = '+c9k5*cr=%td=@imp=r+fj!8r%3yz0a(a%q0j^a^j7ua!3prc7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'tracy.lildio.ru']
+ALLOWED_HOSTS = ['127.0.0.1', 'tracy.lildio.ru', 'lildio.pythonanywhere.com']
 
 
 # Application definition
