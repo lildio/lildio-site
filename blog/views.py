@@ -14,7 +14,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             if request.user == "AnonymousUser":
-                post.author = "levuy4el"
+                post.author = "User"
             else:
                 post.author = request.user
             #post.published_date = timezone.now()
