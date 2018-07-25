@@ -13,10 +13,10 @@ def post_new(request):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-		if (request.user='AnonymousUser')
-			post.author = 'levuy4el'
-	    	else
-            		post.author = request.user
+            if request.user == "AnonymousUser":
+                post.author = "levuy4el"
+            else:
+                post.author = request.user
             #post.published_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
